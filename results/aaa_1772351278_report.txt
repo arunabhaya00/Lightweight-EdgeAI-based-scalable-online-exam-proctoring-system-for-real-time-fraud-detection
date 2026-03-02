@@ -1,0 +1,95 @@
+=================================================================
+        EDGE AI EXAM SYSTEM  –  PROCTORING REPORT
+=================================================================
+  Student         : aaa
+  Report Generated: 2026-03-01 13:17:58
+  Questions        : 7 / 7 answered
+
+─────────────────────────────────────────────────────────────────
+  [ COMPONENT 1 — EYE GAZE & HEAD POSE MONITORING ]
+─────────────────────────────────────────────────────────────────
+  Metric                    Value          Threshold
+  5-Min Window Violation    38.20%         40%
+  Overall Violation         38.26%         20%
+  Total Violation Time      24.1 s
+  Exam Duration             63.0 s
+  Window Alert Triggered    NO
+  Overall Alert Triggered   YES
+
+  COMPONENT 1 VERDICT : *** CHEAT ***
+  Reason: Overall violation 38.3% exceeded threshold 20%
+
+─────────────────────────────────────────────────────────────────
+  [ COMPONENT 2 — FACE VERIFICATION  (10-Second Window Voting) ]
+─────────────────────────────────────────────────────────────────
+  Window Size            : 10 seconds
+  Window Violation Thresh: >40% of frames mismatched
+  Final Cheat Threshold  : cheat_ratio > 0.30
+  Total Windows Checked  : 6
+  Windows Flagged (CHEAT): 2
+  Cheat Ratio            : 0.333
+
+  Window-by-Window Log:
+  --------------------------------------------
+    Window  Viol Ratio     Verdict
+  --------------------------------------------
+         1       0.286       CLEAN
+         2       0.000       CLEAN
+         3       0.143       CLEAN
+         4       0.143       CLEAN
+         5       0.625       CHEAT  <-- FLAGGED
+         6       0.889       CHEAT  <-- FLAGGED
+  --------------------------------------------
+
+  COMPONENT 2 VERDICT : *** CHEAT ***
+  Reason: Cheat ratio 0.33 exceeded threshold 0.30  (2 of 6 windows flagged)
+
+─────────────────────────────────────────────────────────────────
+  [ COMPONENT 3 — OBJECT & UNAUTHORIZED PERSON DETECTION ]
+─────────────────────────────────────────────────────────────────
+  COCO Model             : yolov8n.pt
+  Text Model             : exam_note_detector.pt
+  Multi-Person Threshold : 3.0s continuous
+  Phone Conf Threshold   : 0.4
+  Text Conf Threshold    : 0.25
+
+  Phone Detected         : NO
+  Notes/Text Detected    : YES
+  Unauth Person Detected : YES
+  Objects Seen           : unauthorized person, notebook/notes
+  Total Violation Events : 4
+  Log File (CSV)         : results\violations.csv
+  Log File (JSON)        : results\violations.json
+
+  Violation Event Log:
+  --------------------------------------------------
+             Timestamp  Violation Type
+  --------------------------------------------------
+   2026-03-01 13:17:11  multiple_persons
+   2026-03-01 13:17:19  text_detected
+   2026-03-01 13:17:21  text_detected
+   2026-03-01 13:17:47  multiple_persons
+  --------------------------------------------------
+
+  COMPONENT 3 VERDICT : *** CHEAT ***
+  Reason: Suspicious text/notes detected during exam
+          Unauthorized person(s) detected during exam
+
+=================================================================
+  COMBINED FINAL RESULT  (OR-gate: any component CHEAT → CHEAT)
+=================================================================
+  Component 1 – Eye & Head        : *** CHEAT ***
+  Component 2 – Face Verification : *** CHEAT ***
+  Component 3 – Object / Person   : *** CHEAT ***
+  ───────────────────────────────────────────────────────────────
+  FINAL VERDICT                   : *** CHEATING SUSPECTED ***
+  Reason                          : Eye/Head component flagged | Face Verification component flagged | Object/Person Detection component flagged
+=================================================================
+
+
+─────────────────────────────────────────────────────────────────
+  [ RECORDED VIDEOS ]
+─────────────────────────────────────────────────────────────────
+  Video 1 (Eye/Head + Face Verif) : results\aaa_1772351215_eyehead_face.mp4
+  Video 2 (Object / Person Detect): results\aaa_1772351215_object_person.mp4
+─────────────────────────────────────────────────────────────────

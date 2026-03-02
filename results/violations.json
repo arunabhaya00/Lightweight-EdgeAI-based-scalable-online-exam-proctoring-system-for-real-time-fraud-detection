@@ -1,0 +1,282 @@
+[
+  {
+    "timestamp": "2026-03-01 09:46:46",
+    "violation": "multiple_persons",
+    "student": "Arunabhaya"
+  },
+  {
+    "timestamp": "2026-03-01 09:46:55",
+    "violation": "mobile_phone",
+    "student": "Arunabhaya"
+  },
+  {
+    "timestamp": "2026-03-01 09:46:56",
+    "violation": "mobile_phone",
+    "student": "Arunabhaya"
+  },
+  {
+    "timestamp": "2026-03-01 09:46:58",
+    "violation": "text_detected",
+    "student": "Arunabhaya"
+  },
+  {
+    "timestamp": "2026-03-01 09:46:58",
+    "violation": "mobile_phone",
+    "student": "Arunabhaya"
+  },
+  {
+    "timestamp": "2026-03-01 09:46:58",
+    "violation": "text_detected",
+    "student": "Arunabhaya"
+  },
+  {
+    "timestamp": "2026-03-01 09:47:01",
+    "violation": "mobile_phone",
+    "student": "Arunabhaya"
+  },
+  {
+    "timestamp": "2026-03-01 09:47:03",
+    "violation": "multiple_persons",
+    "student": "Arunabhaya"
+  },
+  {
+    "timestamp": "2026-03-01 10:23:21",
+    "violation": "multiple_persons",
+    "student": "Arunabhaya"
+  },
+  {
+    "timestamp": "2026-03-01 12:09:02",
+    "violation": "multiple_persons",
+    "student": "Hashan"
+  },
+  {
+    "timestamp": "2026-03-01 12:09:17",
+    "violation": "multiple_persons",
+    "student": "Hashan"
+  },
+  {
+    "timestamp": "2026-03-01 13:07:37",
+    "violation": "multiple_persons",
+    "student": "aaa"
+  },
+  {
+    "timestamp": "2026-03-01 13:07:51",
+    "violation": "multiple_persons",
+    "student": "aaa"
+  },
+  {
+    "timestamp": "2026-03-01 13:07:58",
+    "violation": "text_detected",
+    "student": "aaa"
+  },
+  {
+    "timestamp": "2026-03-01 13:17:11",
+    "violation": "multiple_persons",
+    "student": "aaa"
+  },
+  {
+    "timestamp": "2026-03-01 13:17:19",
+    "violation": "text_detected",
+    "student": "aaa"
+  },
+  {
+    "timestamp": "2026-03-01 13:17:21",
+    "violation": "text_detected",
+    "student": "aaa"
+  },
+  {
+    "timestamp": "2026-03-01 13:17:47",
+    "violation": "multiple_persons",
+    "student": "aaa"
+  },
+  {
+    "timestamp": "2026-03-01 14:33:32",
+    "violation": "multiple_persons",
+    "student": "aaa"
+  },
+  {
+    "timestamp": "2026-03-01 14:35:14",
+    "violation": "multiple_persons",
+    "student": "aaa"
+  },
+  {
+    "timestamp": "2026-03-01 14:42:37",
+    "violation": "text_detected",
+    "student": "Hashan"
+  },
+  {
+    "timestamp": "2026-03-01 14:42:39",
+    "violation": "text_detected",
+    "student": "Hashan"
+  },
+  {
+    "timestamp": "2026-03-01 14:42:41",
+    "violation": "text_detected",
+    "student": "Hashan"
+  },
+  {
+    "timestamp": "2026-03-01 14:42:44",
+    "violation": "text_detected",
+    "student": "Hashan"
+  },
+  {
+    "timestamp": "2026-03-01 14:47:03",
+    "violation": "multiple_persons",
+    "student": "Arunabhaya"
+  },
+  {
+    "timestamp": "2026-03-01 14:52:54",
+    "violation": "multiple_persons",
+    "student": "Arunabhaya"
+  },
+  {
+    "timestamp": "2026-03-01 14:53:12",
+    "violation": "multiple_persons",
+    "student": "Arunabhaya"
+  },
+  {
+    "timestamp": "2026-03-01 14:53:20",
+    "violation": "multiple_persons",
+    "student": "Arunabhaya"
+  },
+  {
+    "timestamp": "2026-03-01 15:06:06",
+    "violation": "text_detected",
+    "student": "Arunabhaya"
+  },
+  {
+    "timestamp": "2026-03-01 15:06:08",
+    "violation": "text_detected",
+    "student": "Arunabhaya"
+  },
+  {
+    "timestamp": "2026-03-01 15:06:10",
+    "violation": "text_detected",
+    "student": "Arunabhaya"
+  },
+  {
+    "timestamp": "2026-03-01 15:06:18",
+    "violation": "multiple_persons",
+    "student": "Arunabhaya"
+  },
+  {
+    "timestamp": "2026-03-01 15:06:37",
+    "violation": "multiple_persons",
+    "student": "Arunabhaya"
+  },
+  {
+    "timestamp": "2026-03-01 15:07:57",
+    "violation": "text_detected",
+    "student": "Arunabhaya"
+  },
+  {
+    "timestamp": "2026-03-01 15:07:59",
+    "violation": "text_detected",
+    "student": "Arunabhaya"
+  },
+  {
+    "timestamp": "2026-03-01 15:09:50",
+    "violation": "text_detected",
+    "student": "Arunabhaya"
+  },
+  {
+    "timestamp": "2026-03-01 15:09:51",
+    "violation": "text_detected",
+    "student": "Arunabhaya"
+  },
+  {
+    "timestamp": "2026-03-01 15:09:52",
+    "violation": "text_detected",
+    "student": "Arunabhaya"
+  },
+  {
+    "timestamp": "2026-03-01 16:08:54",
+    "violation": "multiple_persons",
+    "student": "hashan"
+  },
+  {
+    "timestamp": "2026-03-01 16:38:27",
+    "violation": "text_detected",
+    "student": "Hashan"
+  },
+  {
+    "timestamp": "2026-03-01 16:38:29",
+    "violation": "multiple_persons",
+    "student": "Hashan"
+  },
+  {
+    "timestamp": "2026-03-01 16:38:31",
+    "violation": "text_detected",
+    "student": "Hashan"
+  },
+  {
+    "timestamp": "2026-03-01 16:38:32",
+    "violation": "text_detected",
+    "student": "Hashan"
+  },
+  {
+    "timestamp": "2026-03-01 16:38:39",
+    "violation": "text_detected",
+    "student": "Hashan"
+  },
+  {
+    "timestamp": "2026-03-01 16:38:41",
+    "violation": "text_detected",
+    "student": "Hashan"
+  },
+  {
+    "timestamp": "2026-03-01 16:38:44",
+    "violation": "text_detected",
+    "student": "Hashan"
+  },
+  {
+    "timestamp": "2026-03-01 16:39:07",
+    "violation": "text_detected",
+    "student": "Hashan"
+  },
+  {
+    "timestamp": "2026-03-01 16:40:02",
+    "violation": "text_detected",
+    "student": "Hashan"
+  },
+  {
+    "timestamp": "2026-03-01 16:40:04",
+    "violation": "text_detected",
+    "student": "Hashan"
+  },
+  {
+    "timestamp": "2026-03-01 16:40:05",
+    "violation": "multiple_persons",
+    "student": "Hashan"
+  },
+  {
+    "timestamp": "2026-03-01 16:40:07",
+    "violation": "text_detected",
+    "student": "Hashan"
+  },
+  {
+    "timestamp": "2026-03-01 16:40:11",
+    "violation": "text_detected",
+    "student": "Hashan"
+  },
+  {
+    "timestamp": "2026-03-01 16:40:13",
+    "violation": "text_detected",
+    "student": "Hashan"
+  },
+  {
+    "timestamp": "2026-03-01 16:40:16",
+    "violation": "text_detected",
+    "student": "Hashan"
+  },
+  {
+    "timestamp": "2026-03-01 16:40:17",
+    "violation": "text_detected",
+    "student": "Hashan"
+  },
+  {
+    "timestamp": "2026-03-01 16:41:44",
+    "violation": "multiple_persons",
+    "student": "Hashan"
+  }
+]

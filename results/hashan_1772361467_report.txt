@@ -1,0 +1,79 @@
+=================================================================
+        EDGE AI EXAM SYSTEM  –  PROCTORING REPORT
+=================================================================
+  Student         : hashan
+  Report Generated: 2026-03-01 16:07:47
+  Questions        : 7 / 7 answered
+
+─────────────────────────────────────────────────────────────────
+  [ COMPONENT 1 — EYE GAZE & HEAD POSE MONITORING ]
+─────────────────────────────────────────────────────────────────
+  Metric                    Value          Threshold
+  5-Min Window Violation    33.82%         40%
+  Overall Violation         34.64%         20%
+  Total Violation Time      9.0 s
+  Exam Duration             26.1 s
+  Window Alert Triggered    NO
+  Overall Alert Triggered   YES
+
+  COMPONENT 1 VERDICT : *** CHEAT ***
+  Reason: Overall violation 34.6% exceeded threshold 20%
+
+─────────────────────────────────────────────────────────────────
+  [ COMPONENT 2 — FACE VERIFICATION  (10-Second Window Voting) ]
+─────────────────────────────────────────────────────────────────
+  Window Size            : 10 seconds
+  Window Violation Thresh: >40% of frames mismatched
+  Final Cheat Threshold  : cheat_ratio > 0.30
+  Total Windows Checked  : 2
+  Windows Flagged (CHEAT): 1
+  Cheat Ratio            : 0.500
+
+  Window-by-Window Log:
+  --------------------------------------------
+    Window  Viol Ratio     Verdict
+  --------------------------------------------
+         1       0.333       CLEAN
+         2       0.556       CHEAT  <-- FLAGGED
+  --------------------------------------------
+
+  COMPONENT 2 VERDICT : *** CHEAT ***
+  Reason: Cheat ratio 0.50 exceeded threshold 0.30  (1 of 2 windows flagged)
+
+─────────────────────────────────────────────────────────────────
+  [ COMPONENT 3 — OBJECT & UNAUTHORIZED PERSON DETECTION ]
+─────────────────────────────────────────────────────────────────
+  COCO Model             : yolov8n.pt
+  Text Model             : exam_note_detector.pt
+  Multi-Person Threshold : 3.0s continuous
+  Phone Conf Threshold   : 0.4
+  Text Conf Threshold    : 0.25
+
+  Phone Detected         : NO
+  Notes/Text Detected    : NO
+  Unauth Person Detected : NO
+  Objects Seen           : none
+  Total Violation Events : 0
+  Log File (CSV)         : results\violations.csv
+  Log File (JSON)        : results\violations.json
+  COMPONENT 3 VERDICT : NOT CHEAT
+  Reason: No prohibited objects or unauthorized persons detected
+
+=================================================================
+  COMBINED FINAL RESULT  (OR-gate: any component CHEAT → CHEAT)
+=================================================================
+  Component 1 – Eye & Head        : *** CHEAT ***
+  Component 2 – Face Verification : *** CHEAT ***
+  Component 3 – Object / Person   : NOT CHEAT
+  ───────────────────────────────────────────────────────────────
+  FINAL VERDICT                   : *** CHEATING SUSPECTED ***
+  Reason                          : Eye/Head component flagged | Face Verification component flagged
+=================================================================
+
+
+─────────────────────────────────────────────────────────────────
+  [ RECORDED VIDEOS ]
+─────────────────────────────────────────────────────────────────
+  Video 1 (Eye/Head + Face Verif) : results\hashan_1772361441_eyehead_face.mp4
+  Video 2 (Object / Person Detect): results\hashan_1772361441_object_person.mp4
+─────────────────────────────────────────────────────────────────

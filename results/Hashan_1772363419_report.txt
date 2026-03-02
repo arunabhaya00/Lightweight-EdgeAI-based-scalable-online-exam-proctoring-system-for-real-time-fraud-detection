@@ -1,0 +1,83 @@
+=================================================================
+        EDGE AI EXAM SYSTEM  –  PROCTORING REPORT
+=================================================================
+  Student         : Hashan
+  Generated       : 2026-03-01 16:40:19
+  Questions       : 3/7 answered
+
+─────────────────────────────────────────────────────────────────
+  [ COMPONENT 1 — EYE GAZE & HEAD POSE ]
+─────────────────────────────────────────────────────────────────
+  5-Min Window  : 92.37%  (limit 40%)
+  Overall       : 90.62%  (limit 20%)
+  Viol Time     : 16.4s
+  Exam Duration  : 18.0s
+  Window Alert  : YES
+  Overall Alert : YES
+
+  VERDICT: *** CHEAT ***
+  Reason : Window 92.4%>40%
+  Reason : Overall 90.6%>20%
+
+─────────────────────────────────────────────────────────────────
+  [ COMPONENT 2 — FACE VERIFICATION ]
+─────────────────────────────────────────────────────────────────
+  Window Size   : 10s
+  Total Windows : 1
+  Cheat Windows : 0
+  Cheat Ratio   : 0.000  (limit 0.300)
+
+  Window Log:
+  --------------------------------------------
+     Win     Ratio   Verdict
+  --------------------------------------------
+       1     0.000     CLEAN
+  --------------------------------------------
+
+  VERDICT: NOT CHEAT
+  Reason : Ratio 0.00 <= 0.30 (0/1 windows)
+
+─────────────────────────────────────────────────────────────────
+  [ COMPONENT 3 — OBJECT & PERSON DETECTION ]
+─────────────────────────────────────────────────────────────────
+  Phone Detected : NO
+  Notes/Text     : YES
+  Unauth Person  : YES
+  Objects Seen   : notebook/notes, unauthorized person
+  Total Events   : 8
+
+  Events:
+  --------------------------------------------------
+                  Time  Type
+  --------------------------------------------------
+   2026-03-01 16:40:02  text_detected
+   2026-03-01 16:40:04  text_detected
+   2026-03-01 16:40:05  multiple_persons
+   2026-03-01 16:40:07  text_detected
+   2026-03-01 16:40:11  text_detected
+   2026-03-01 16:40:13  text_detected
+   2026-03-01 16:40:16  text_detected
+   2026-03-01 16:40:17  text_detected
+  --------------------------------------------------
+
+  VERDICT: *** CHEAT ***
+  Reason : Notes detected
+  Reason : Unauth person
+
+=================================================================
+  COMBINED FINAL RESULT  (OR-gate)
+=================================================================
+  Eye & Head : *** CHEAT ***
+  Face Verif : NOT CHEAT
+  Obj/Person : *** CHEAT ***
+  ───────────────────────────────────────────────────────────────
+  FINAL VERDICT : *** CHEATING SUSPECTED ***
+  Reason        : Eye/Head | Obj/Person
+=================================================================
+
+─────────────────────────────────────────────────────────────────
+  [ RECORDED VIDEOS ]
+─────────────────────────────────────────────────────────────────
+  Video 1 : results\Hashan_1772363401_eyehead_face.mp4
+  Video 2 : results\Hashan_1772363401_object_person.mp4
+─────────────────────────────────────────────────────────────────

@@ -1,0 +1,102 @@
+=================================================================
+        EDGE AI EXAM SYSTEM  –  PROCTORING REPORT
+=================================================================
+  Student         : Hashan
+  Report Generated: 2026-03-01 14:42:45
+  Questions        : 0 / 7 answered
+
+─────────────────────────────────────────────────────────────────
+  [ COMPONENT 1 — EYE GAZE & HEAD POSE MONITORING ]
+─────────────────────────────────────────────────────────────────
+  Metric                    Value          Threshold
+  5-Min Window Violation    23.08%         40%
+  Overall Violation         6.99%         20%
+  Total Violation Time      0.7 s
+  Exam Duration             10.4 s
+  Window Alert Triggered    NO
+  Overall Alert Triggered   NO
+
+  COMPONENT 1 VERDICT : NOT CHEAT
+  Reason: Both thresholds within limits  (window 23.1% < 40%,  overall 7.0% < 20%)
+
+─────────────────────────────────────────────────────────────────
+  [ COMPONENT 2 — FACE VERIFICATION  (10-Second Window Voting) ]
+─────────────────────────────────────────────────────────────────
+  Window Size            : 10 seconds
+  Window Violation Thresh: >40% of frames mismatched
+  Final Cheat Threshold  : cheat_ratio > 0.30
+  Total Windows Checked  : 0
+  Windows Flagged (CHEAT): 0
+  Cheat Ratio            : 0.000
+
+  COMPONENT 2 VERDICT : NOT CHEAT
+  Reason: Cheat ratio 0.00 within threshold 0.30  (0 of 0 windows flagged)
+
+─────────────────────────────────────────────────────────────────
+  [ COMPONENT 3 — OBJECT & UNAUTHORIZED PERSON DETECTION ]
+─────────────────────────────────────────────────────────────────
+  COCO Model             : yolov8n.pt
+  Text Model             : exam_note_detector.pt
+  Multi-Person Threshold : 3.0s continuous
+  Phone Conf Threshold   : 0.4
+  Text Conf Threshold    : 0.25
+
+  Phone Detected         : NO
+  Notes/Text Detected    : YES
+  Unauth Person Detected : NO
+  Objects Seen           : notebook/notes
+  Total Violation Events : 4
+  Log File (CSV)         : results\violations.csv
+  Log File (JSON)        : results\violations.json
+
+  Violation Event Log:
+  --------------------------------------------------
+             Timestamp  Violation Type
+  --------------------------------------------------
+   2026-03-01 14:42:37  text_detected
+   2026-03-01 14:42:39  text_detected
+   2026-03-01 14:42:41  text_detected
+   2026-03-01 14:42:44  text_detected
+  --------------------------------------------------
+
+  COMPONENT 3 VERDICT : *** CHEAT ***
+  Reason: Suspicious text/notes detected during exam
+
+─────────────────────────────────────────────────────────────────
+  [ COMPONENT 4 — AUDIO INTEGRITY VERIFICATION ]
+─────────────────────────────────────────────────────────────────
+  ECAPA Model            : ecapa_quantized_traced.pth
+  YAMNet Classifier      : yamnet_audio_classifier.h5
+  Segment Length         : 10s
+  Speaker Dist Threshold : < 0.35
+  Calibration Done       : YES
+
+  Total Segments         : 0
+  Suspicious Segments    : 0
+  OK Segments            : 0
+  Integrity Score        : 100.0%
+  Verdict                : PASS
+  Recording File         : N/A
+  COMPONENT 4 VERDICT : NOT CHEAT
+  Reason: Audio integrity score 100.0% within acceptable limits
+
+=================================================================
+  COMBINED FINAL RESULT  (OR-gate: any component CHEAT → CHEAT)
+=================================================================
+  Component 1 – Eye & Head        : NOT CHEAT
+  Component 2 – Face Verification : NOT CHEAT
+  Component 3 – Object / Person   : *** CHEAT ***
+  Component 4 – Audio Integrity   : NOT CHEAT
+  ───────────────────────────────────────────────────────────────
+  FINAL VERDICT                   : *** CHEATING SUSPECTED ***
+  Reason                          : Object/Person Detection component flagged
+=================================================================
+
+
+─────────────────────────────────────────────────────────────────
+  [ RECORDED FILES ]
+─────────────────────────────────────────────────────────────────
+  Video 1 (Eye/Head + Face Verif) : results\Hashan_1772356355_eyehead_face.mp4
+  Video 2 (Object / Person Detect): results\Hashan_1772356355_object_person.mp4
+  Audio   (Audio Integrity C4)    : N/A
+─────────────────────────────────────────────────────────────────
