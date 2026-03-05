@@ -19,13 +19,13 @@ class EdgeExamApp:
         self.root.attributes("-fullscreen", True)
         self.root.configure(bg=BG)
 
-        self.cap              = cv2.VideoCapture(0)
-        self.current_student  = None
-        self.exam_running     = False
-        self.final_cheated    = False
+        self.cap              = cv2.VideoCapture(0) # Camera capture object
+        self.current_student  = None    # Current logged in student
+        self.exam_running     = False   # Flag to track exam state
+        self.final_cheated    = False   # Final cheating decision
         self.eye              = None
         self.face             = None
-        self.obj              = None
+        self.obj              = None    # Detection models
         self.audio            = None
         self.writer           = None
         self.video_path       = None
