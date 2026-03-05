@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+tfhub_cache/
+*.wav
+*.pth
+*.h5
